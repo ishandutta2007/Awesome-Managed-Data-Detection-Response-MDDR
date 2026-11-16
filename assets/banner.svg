@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" style="background:#090d16; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1021" />
+      <stop offset="50%" stop-color="#050811" />
+      <stop offset="100%" stop-color="#0e172a" />
+    </linearGradient>
+
+    <!-- Glowing Lines & Accents -->
+    <linearGradient id="cyberCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#7f00ff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ff007f" stop-opacity="0.7"/>
+    </linearGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#e0f2fe" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="subtleGlow">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulseOrb {
+      0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.35; }
+      50% { transform: scale(1.15) translate(-10px, 10px); opacity: 0.6; }
+    }
+    @keyframes pulseRing {
+      0% { r: 40px; opacity: 0.8; stroke-width: 2px; }
+      50% { r: 90px; opacity: 0.3; stroke-width: 1.5px; }
+      100% { r: 140px; opacity: 0; stroke-width: 0.5px; }
+    }
+    @keyframes radarSweep {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes floatParticle {
+      0%, 100% { transform: translateY(0px) translateX(0px); opacity: 0.2; }
+      50% { transform: translateY(-25px) translateX(15px); opacity: 0.8; }
+    }
+    @keyframes dashMove {
+      to { stroke-dashoffset: -100; }
+    }
+    @keyframes scanLine {
+      0% { transform: translateY(0); opacity: 0; }
+      50% { opacity: 0.7; }
+      100% { transform: translateY(360px); opacity: 0; }
+    }
+
+    .orb-glow { animation: pulseOrb 8s ease-in-out infinite; transform-origin: center; }
+    .radar-sweep { animation: radarSweep 10s linear infinite; transform-origin: 1040px 180px; }
+    .wave-ring-1 { animation: pulseRing 4s cubic-bezier(0.2, 0.8, 0.4, 1) infinite; }
+    .wave-ring-2 { animation: pulseRing 4s cubic-bezier(0.2, 0.8, 0.4, 1) infinite 2s; }
+    .p-float { animation: floatParticle 5s ease-in-out infinite; }
+    .grid-track { stroke-dasharray: 6, 6; animation: dashMove 20s linear infinite; }
+    .scanner { animation: scanLine 6s linear infinite; }
+  </style>
+
+  <!-- Deep Background -->
+  <rect width="1200" height="360" fill="url(#bgGradient)" />
+
+  <!-- Digital Grid Pattern in Background -->
+  <g opacity="0.12">
+    <line x1="0" y1="60" x2="1200" y2="60" stroke="#38bdf8" stroke-width="1" />
+    <line x1="0" y1="120" x2="1200" y2="120" stroke="#38bdf8" stroke-width="1" />
+    <line x1="0" y1="180" x2="1200" y2="180" stroke="#38bdf8" stroke-width="1" />
+    <line x1="0" y1="240" x2="1200" y2="240" stroke="#38bdf8" stroke-width="1" />
+    <line x1="0" y1="300" x2="1200" y2="300" stroke="#38bdf8" stroke-width="1" />
+
+    <line x1="150" y1="0" x2="150" y2="360" stroke="#38bdf8" stroke-width="1" />
+    <line x1="300" y1="0" x2="300" y2="360" stroke="#38bdf8" stroke-width="1" />
+    <line x1="450" y1="0" x2="450" y2="360" stroke="#38bdf8" stroke-width="1" />
+    <line x1="600" y1="0" x2="600" y2="360" stroke="#38bdf8" stroke-width="1" />
+    <line x1="750" y1="0" x2="750" y2="360" stroke="#38bdf8" stroke-width="1" />
+    <line x1="900" y1="0" x2="900" y2="360" stroke="#38bdf8" stroke-width="1" />
+    <line x1="1050" y1="0" x2="1050" y2="360" stroke="#38bdf8" stroke-width="1" />
+  </g>
+
+  <!-- Dynamic Glowing Cyber Nebula (Background layer) -->
+  <circle cx="200" cy="90" r="140" fill="#0284c7" filter="url(#glow)" class="orb-glow" />
+  <circle cx="1020" cy="190" r="180" fill="#7c3aed" filter="url(#glow)" class="orb-glow" style="animation-delay: -3s;" />
+  <circle cx="650" cy="280" r="100" fill="#06b6d4" filter="url(#glow)" class="orb-glow" style="animation-delay: -5s;" />
+
+  <!-- Animated Scanner Laser -->
+  <line x1="0" y1="0" x2="1200" y2="0" stroke="url(#cyberCyan)" stroke-width="2" opacity="0.4" class="scanner" filter="url(#subtleGlow)" />
+
+  <!-- Dynamic Constellation / Stream Network Lines -->
+  <g stroke="#38bdf8" stroke-width="1.5" opacity="0.3" class="grid-track">
+    <path d="M 60,310 L 220,290 L 340,320 L 520,280 L 740,310 L 910,270 L 1140,290" fill="none" />
+    <path d="M 80,70 L 260,90 L 480,50 L 780,80 L 1020,40 L 1150,70" fill="none" />
+  </g>
+
+  <!-- Interactive Floating Particles -->
+  <circle cx="120" cy="140" r="3" fill="#38bdf8" class="p-float" style="animation-delay: 0s;" />
+  <circle cx="280" cy="240" r="4" fill="#a855f7" class="p-float" style="animation-delay: 1.5s;" />
+  <circle cx="860" cy="110" r="3.5" fill="#00f2fe" class="p-float" style="animation-delay: 2.2s;" />
+  <circle cx="760" cy="260" r="2.5" fill="#f43f5e" class="p-float" style="animation-delay: 0.8s;" />
+  <circle cx="940" cy="300" r="3" fill="#38bdf8" class="p-float" style="animation-delay: 3.1s;" />
+
+  <!-- Right Visual Feature: Dynamic Radar & Defense Hub (Non-obtrusive background-right element) -->
+  <g transform="translate(0, 0)">
+    <!-- Expanding Ping Waves -->
+    <circle cx="1040" cy="180" r="40" fill="none" stroke="#00f2fe" class="wave-ring-1" />
+    <circle cx="1040" cy="180" r="40" fill="none" stroke="#a855f7" class="wave-ring-2" />
+
+    <!-- Radar Framework -->
+    <circle cx="1040" cy="180" r="105" fill="none" stroke="#38bdf8" stroke-width="1.5" opacity="0.25" stroke-dasharray="4, 4" />
+    <circle cx="1040" cy="180" r="75" fill="none" stroke="#38bdf8" stroke-width="1.5" opacity="0.4" />
+    <circle cx="1040" cy="180" r="45" fill="none" stroke="#38bdf8" stroke-width="1" opacity="0.6" />
+    <circle cx="1040" cy="180" r="5" fill="#00f2fe" filter="url(#subtleGlow)" />
+
+    <!-- Rotating Radar Sweep Line -->
+    <g class="radar-sweep">
+      <line x1="1040" y1="180" x2="1145" y2="180" stroke="url(#cyberCyan)" stroke-width="2.5" filter="url(#subtleGlow)" />
+      <path d="M 1040,180 L 1140,150 A 105 105 0 0 1 1145,180 Z" fill="url(#cyberCyan)" opacity="0.18" />
+    </g>
+
+    <!-- Shield Icon Inside Radar Grid -->
+    <path d="M 1040,150 L 1062,160 C 1062,185 1040,202 1040,202 C 1040,202 1018,185 1018,160 Z" 
+          fill="none" stroke="url(#shieldGrad)" stroke-width="2.5" opacity="0.75" filter="url(#subtleGlow)" />
+  </g>
+
+  <!-- FOREGROUND CONTENT: Guaranteed high contrast, fully readable, crisp z-index placement -->
+  <g transform="translate(80, 0)">
+    <!-- Security Badge / Status Tag -->
+    <g transform="translate(0, 52)">
+      <rect x="0" y="0" width="280" height="32" rx="16" fill="#0f172a" stroke="#0284c7" stroke-width="1.5" opacity="0.9" />
+      <circle cx="16" cy="16" r="5" fill="#10b981" filter="url(#subtleGlow)" />
+      <text x="32" y="21" fill="#38bdf8" font-size="13" font-weight="700" letter-spacing="1.5">24/7 THREAT DETECTION &amp; RESPONSE</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="145" fill="url(#textGrad)" font-size="44" font-weight="900" letter-spacing="-0.5" filter="url(#subtleGlow)">
+      Awesome MDDR &amp; MDR
+    </text>
+
+    <!-- Subtitle Heading -->
+    <text x="0" y="185" fill="#f8fafc" font-size="22" font-weight="600" opacity="0.95">
+      Managed Data Detection and Response Platforms &amp; Open-Source Toolkits
+    </text>
+
+    <!-- Descriptive Bullets / Feature Highlights -->
+    <text x="0" y="226" fill="#94a3b8" font-size="15" font-weight="400">
+      ⚡ Enterprise Cloud Telemetry &amp; Autonomous AI Incident Containment
+    </text>
+    <text x="0" y="252" fill="#94a3b8" font-size="15" font-weight="400">
+      🛡️ Immutable Backup Protection, Ransomware Resiliency &amp; SIEM/XDR Foundations
+    </text>
+
+    <!-- Feature Tags / Quick Pills (Static foreground, cannot be obscured) -->
+    <g transform="translate(0, 282)">
+      <!-- Pill 1 -->
+      <rect x="0" y="0" width="130" height="28" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="14" y="19" fill="#38bdf8" font-size="12" font-weight="600">🛡️ SaaS MDDR</text>
+
+      <!-- Pill 2 -->
+      <rect x="142" y="0" width="156" height="28" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="156" y="19" fill="#a78bfa" font-size="12" font-weight="600">⚡ Agentic SecOps</text>
+
+      <!-- Pill 3 -->
+      <rect x="310" y="0" width="168" height="28" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="324" y="19" fill="#34d399" font-size="12" font-weight="600">💻 Open-Source XDR</text>
+
+      <!-- Pill 4 -->
+      <rect x="490" y="0" width="154" height="28" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="504" y="19" fill="#f472b6" font-size="12" font-weight="600">🚨 Incident Response</text>
+    </g>
+  </g>
+</svg>

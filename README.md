@@ -1,127 +1,200 @@
-# Awesome-Managed-Data-Detection-Response-MDDR
+<div align="center">
 
-# Awesome Managed Data Detection & Response (MDDR)
+<img src="./assets/banner.svg" alt="Awesome Managed Data Detection and Response (MDDR) Banner" width="100%" />
 
-> A curated list of top Managed Data Detection and Response (MDDR) and Managed Detection and Response (MDR) platforms — both SaaS/Hosted commercial solutions and open-source alternatives for 24/7 threat monitoring, investigation, and response.
-> 🌟 Star this repo if you find it useful! 🌟
+# 🛡️ Awesome Managed Data Detection & Response (MDDR) 🚀
 
----
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Managed-Data-Detection-Response-MDDR/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Managed-Data-Detection-Response-MDDR?style=flat-square&color=gold" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Managed-Data-Detection-Response-MDDR/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Managed-Data-Detection-Response-MDDR?style=flat-square&color=blue" alt="GitHub Forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Managed-Data-Detection-Response-MDDR/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Managed-Data-Detection-Response-MDDR?style=flat-square&color=red" alt="GitHub Issues" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Managed-Data-Detection-Response-MDDR/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg?style=flat-square" alt="License: CC0-1.0" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
-## 📋 Table of Contents
+<p align="center">
+  <b>A curated list of elite Managed Data Detection and Response (MDDR) &amp; Managed Detection and Response (MDR) platforms, autonomous AI SOCs, and open-source cybersecurity frameworks for 24/7 continuous threat monitoring, automated containment, and forensic digital investigation.</b>
+</p>
 
-- [SaaS / Hosted Platforms](#-saas--hosted-platforms)
-  - [Druva Managed Data Detection and Response](#druva-managed-data-detection-and-response)
-  - [CrowdStrike Falcon Complete](#crowdstrike-falcon-complete)
-  - [SentinelOne Vigilance Respond](#sentinelone-vigilance-respond)
-  - [Arctic Wolf Aurora MDR](#arctic-wolf-aurora-mdr)
-  - [Rapid7 Managed Threat Complete](#rapid7-managed-threat-complete)
-  - [Expel MDR](#expel-mdr)
-  - [ReliaQuest GreyMatter](#reliaquest-greymatter)
-- [Open-Source Software](#-open-source-software)
-  - [Wazuh](#wazuh)
-  - [TheHive & Cortex](#thehive--cortex)
+<p align="center">
+  🌟 <i>Star this repository to stay ahead of modern cloud data protection, zero-day threat defense, and ransomware incident recovery!</i> 🌟
+</p>
 
----
-
-## 🟦 SaaS / Hosted Platforms
-
-Commercial, cloud-hosted MDDR and MDR platforms. These are not open-source but are included as reference points for feature comparison.
-
-### Druva Managed Data Detection and Response
-**Type:** 24/7 backup data monitoring with managed incident response
-Druva's MDDR is a managed service built directly into the Druva Cloud Platform, providing round-the-clock monitoring, detection, and response specifically for **backup environments** [citation:1]. It monitors key threat indicators including snapshot deletion, backup set deletion, admin deletion of devices or users, and suspicious activity across workloads like Microsoft 365, Google Workspace, Azure, AWS, and NAS [citation:1]. When an alert fires, Druva's Incident Response team triages and validates it, contacts administrators to verify whether the event was planned, and executes predefined playbooks for response [citation:1]. **Important:** MDDR is available only to Druva customers at no additional charge, and it is not available for GovCloud and SFDC customers [citation:1][citation:14].  
-**Best for:** Druva customers wanting an expert extension to their IR team focused specifically on backup integrity and data protection threats.
-
-### CrowdStrike Falcon Complete
-**Type:** Agentic MDR with human oversight and 1-minute containment
-Falcon Complete is an agentic MDR service that combines deterministic automation, adaptive AI agents, and 24/7 human expert oversight [citation:2]. It correlates telemetry across endpoint, identity, cloud, SaaS, and third-party data to expose full attack campaigns rather than isolated alerts, and it can contain threats at machine speed [citation:2]. Reported metrics include a **median time to containment (MTTC) of 1 minute**, a **75% reduction in mean time to response (MTTR)**, and **2.7 million remediated detections per month** [citation:2]. It includes Falcon Shield for 24/7 SaaS application protection and Falcon Guardian runtime telemetry for AI agent behavior visibility [citation:2].  
-**Best for:** Organizations wanting the fastest containment times and deep correlation across a broad telemetry estate with strong AI governance.
-
-### SentinelOne Vigilance Respond
-**Type:** Tiered MDR with forensic reporting and IR retainer
-SentinelOne's Vigilance Respond and Respond Pro are MDR services layered on top of its Singularity platform [citation:3]. Respond provides 24/7 monitoring, investigation, and documentation of every console threat, forwarding only urgent issues to the customer [citation:3]. **Respond Pro** adds digital forensic reporting, malware reverse engineering, memory analysis, direct access to forensic experts, and an **IR retainer** with prepaid hours for active containment and eradication [citation:3]. Standard SLA offers investigation within 2-4 hours, while Pro offers 1-2 hours [citation:3].  
-**Best for:** Organizations wanting tiered MDR options with the option to add forensic depth and an IR retainer as needs escalate.
-
-### Arctic Wolf Aurora MDR
-**Type:** Concierge-led proactive MDR with agentic SOC
-Arctic Wolf's Aurora MDR emphasizes a **Concierge Experience** where security experts learn the organization's specific environment, priorities, and risks to reduce attack frequency and severity, not just respond to alerts [citation:4]. The Aurora Agentic SOC uses AI for speed and scale while human experts guide decisions, with **200+ integrations** across attack surfaces [citation:4]. Reported outcomes include reducing the frequency of a successful attack by up to **90%** and decreasing impact by up to **90%** (Forrester TEI) [citation:4]. It also provides proactive Security Posture Reviews (SPiDRs) to harden environments [citation:4].  
-**Best for:** Organizations wanting a hands-on, proactive partner that focuses on risk reduction and posture improvement alongside detection and response.
-
-### Rapid7 Managed Threat Complete
-**Type:** MXDR with unlimited vulnerability management and IR
-Managed Threat Complete bundles always-on MXDR with **unlimited vulnerability risk management** in a single subscription [citation:5]. A key differentiator is that it includes **unlimited incident response** at the same level as an IR retainer, with DFIR professionals embedded on the team—rather than handing off to a third-party IR firm after a breach [citation:5]. Forrester TEI found **5.5x ROI over 3 years**, **<3 month payback**, and a **90% reduction in breach likelihood** [citation:5]. Customers also get full access to the underlying cloud-native XDR technology and detections library for their own investigations [citation:5].  
-**Best for:** Teams wanting to consolidate MDR and vulnerability management while retaining full visibility and control over the underlying detection technology.
-
-### Expel MDR
-**Type:** Transparent, AI-accelerated MDR with 14-minute MTTR
-Expel MDR connects to the customer's existing security stack (160+ integrations including CrowdStrike, Elastic, Azure, Google Workspace, and Okta) with no agents to deploy or rip-and-replace [citation:6]. Its AI engine **Ruxie** triages millions of events, gathers evidence, enriches alerts, and matches patterns in seconds, while human analysts make the critical calls [citation:6]. Reported **MTTR is 14 minutes**, with automated remediation executing targeted containment actions and generating plain-language audit trails [citation:6]. The platform emphasizes **no black boxes**—customers see exactly what Expel sees in the Workbench, and every investigation and response is visible in real time [citation:6].  
-**Best for:** Organizations wanting a transparent MDR partner that works with their existing tools and provides full visibility into investigations and response actions.
-
-### ReliaQuest GreyMatter
-**Type:** Agentic AI SecOps platform with 4.48-minute containment
-ReliaQuest GreyMatter is an agentic AI security operations platform with six "Teammate" personas (IR Analyst, Detection Engineer, Threat Hunter, Threat Intel Analyst, IT Engineer, OT Engineer) that use 200+ agent skills and 400+ AI tools to work toward objectives rather than just executing tasks [citation:11]. Reported metrics include **mean time to detect <5 seconds**, **investigate 22 minutes**, **contain 4.48 minutes**, and **resolve 48 minutes** [citation:11]. The IR Analyst autonomously investigates and responds to **100% of alerts across 300+ technologies with 99.4% accuracy**, handling **78M alerts per year** [citation:11].  
-**Best for:** Organizations wanting an agentic AI platform that automates the full investigation and response lifecycle across a broad technology estate.
+</div>
 
 ---
 
-## 🟩 Open-Source Software
+## 🧭 Table of Contents 📑
 
-Self-hosted, community-driven tools for building MDDR/MDR capabilities. The open-source ecosystem provides the **detection, investigation, and response foundation** rather than a fully managed 24/7 human service.
-
-### Wazuh
-**Stack:** C++ / OpenSearch | **License:** GPL-2.0 (open source) 
-Wazuh is a unified open-source XDR and SIEM platform that provides the technical foundation for managed detection and response [citation:12]. Key capabilities relevant to MDDR include:
-- **File Integrity Monitoring (FIM)** tracking file additions, modifications, and deletions with real-time alerts, helping detect ransomware or tampering with critical data [citation:12]
-- **Malware detection** monitoring files, system logs, Windows Registry, and system calls, with threat intelligence integration and anomaly detection [citation:12]
-- **Vulnerability Detection** correlating software inventory against CVE data from the Wazuh CTI platform [citation:12]
-- **Threat hunting** with rules, decoders, and MITRE ATT&CK mapping [citation:12]
-- **Active response** for automated actions like removing malicious files or isolating endpoints [citation:12]
-
-While Wazuh does not provide the 24/7 human analyst service of commercial MDDR, it delivers the detection and response automation that a SOC or MSP can build a managed offering around.  
-**Best for:** Organizations and MSPs wanting to build their own detection and response capability with full control over data and no per-agent licensing.
-
-### TheHive & Cortex
-**Stack:** Scala / Elasticsearch / Python | **License:** AGPL-3.0
-TheHive is an open-source Security Incident Response Platform for case management and collaboration, while Cortex provides automated enrichment and analysis of observables (IOCs) through analyzers like VirusTotal, AbuseIPDB, and MISP [from previous context]. Together they operationalize the **response and investigation** side of MDDR: alerts can be converted into cases, observables automatically enriched, and response actions tracked. They integrate with MISP for threat intelligence sharing and with SIEMs for alert ingestion.  
-**Best for:** SOC and CSIRT teams building an open-source investigation and case management layer to complement detection tools like Wazuh.
+- [🌐 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🏢 SaaS & Hosted Commercial Platforms](#-saas--hosted-commercial-platforms)
+- [💻 Open-Source Software & Toolkits](#-open-source-software--toolkits)
+- [📊 Feature & Response Comparison](#-feature--response-comparison)
+- [🤝 Contributing Guidelines](#-contributing-guidelines)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [📈 Star History](#-star-history)
+- [📄 License](#-license)
 
 ---
 
-## 📊 Comparison at a Glance
+## 🌐 Sector Overview & Market Dynamics 📈
 
-| Software | License | Type | MTTC / Response | IR Retainer | Self-Hosted | Best For |
-|----------|---------|------|-----------------|-------------|-------------|----------|
-| **Druva MDDR** | Proprietary | Backup data MDDR | (Playbook-based) | (Included for Druva) | ❌ | Backup integrity threats |
-| **CrowdStrike Falcon Complete** | Proprietary | Agentic MDR | 1 min MTTC | (Managed remediation) | ❌ | Fastest containment + AI governance |
-| **SentinelOne Vigilance** | Proprietary | Tiered MDR | 1-4 hr investigation | ✅ Respond Pro | ❌ | Tiered options + forensics |
-| **Arctic Wolf Aurora** | Proprietary | Proactive MDR | (Guided) | (Concierge) | ❌ | Risk reduction + posture |
-| **Rapid7 Managed Threat** | Proprietary | MXDR + VRM | (Check) | ✅ Unlimited IR | ❌ | Consolidated MDR + VM |
-| **Expel MDR** | Proprietary | Transparent MDR | 14 min MTTR | (Human-executed) | ❌ | Transparency + existing stack |
-| **ReliaQuest GreyMatter** | Proprietary | Agentic AI SecOps | 4.48 min contain | (AI + human) | ❌ | Full agentic lifecycle |
-| **Wazuh** | GPL-2.0 | SIEM/XDR | (Configurable) | ❌ (DIY) | ✅ | Build your own foundation |
-| **TheHive & Cortex** | AGPL-3.0 | Case mgmt + enrichment | (Workflow) | ❌ (DIY) | ✅ | Investigation + enrichment |
+The global Managed Detection and Response (MDR) market is valued at approximately **$5.0B – $6.2B** and is projected to expand to **$13.0B – $17.6B by the early 2030s** at an estimated CAGR of 17% – 23.5%, driven by the acute cybersecurity talent deficit, escalating ransomware campaigns, and stringent enterprise regulatory compliance requirements. The sector is **highly fragmented and intensely competitive** across 600+ providers globally rather than a winner-take-all monopoly, spanning specialized pure-play MDR vendors, hyperscale cloud/XDR platform providers, and managed SOC service integrators catering to diverse organizational telemetry stacks and vertical-specific compliance needs.
 
 ---
 
-## 🤝 Contributing
+## 🏢 SaaS & Hosted Commercial Platforms ☁️
 
-Contributions are welcome! If you know of an open-source tool that provides MDDR/MDR capabilities or a commercial platform that should be listed here, please open a pull request with:
+The following commercial, cloud-hosted MDDR and MDR platforms deliver turnkey 24/7 human analyst oversight, agentic AI triage, telemetry ingestion, and proactive threat containment. Sorted in descending order by enterprise scale (market capitalization / valuation):
 
-- Project name and URL
-- Brief description (1–2 sentences)
-- Stack and license
-- Why it stands out
-
-Please ensure the project is actively maintained (releases within the last 12 months) and genuinely open-source.
-
-**Note on the open-source ecosystem:** The open-source landscape for **fully managed detection and response** is **essentially nonexistent**—MDDR/MDR is fundamentally a human service (24/7 analysts) combined with technology, which open-source projects cannot provide as a turnkey offering. The available open-source tools provide the **technical foundation**: **Wazuh** delivers the detection, FIM, vulnerability management, and active response capabilities that a SOC needs , while **TheHive & Cortex** provide the case management and automated enrichment layer [from previous context]. Organizations wanting an open-source MDDR approach must combine these tools with their own staff or an MSP to deliver the managed service component. On the commercial side, **Druva MDDR** is uniquely focused on **backup data threats** (snapshot deletion, backup set deletion) rather than general endpoint/identity threats [citation:1], while **CrowdStrike Falcon Complete** and **ReliaQuest GreyMatter** lead on autonomous/agentic response speed [citation:2][citation:11], and **Expel** differentiates on transparency with its existing-stack approach [citation:6].
-
----
-
-## 📄 License
-
-This list is released under CC0 1.0 Universal (Public Domain). The software projects listed retain their respective licenses.
+| Platform / Vendor | Company Scale (Valuation / Revenue) 🏢 | Pricing (Specific Starting Tiers) 💵 | Free Tier / Trial Limit ⏱️ | Core Focus & Autonomous Capability 🎯 |
+| :--- | :--- | :--- | :--- | :--- |
+| **CrowdStrike Falcon Complete** | **~$232.0B Market Cap** (~$4.81B TTM Revenue) | Starting tier **Falcon Go at $59.99/device/year** ($7.99/device/month, up to 100 devices); **Falcon Pro at $99.99/device/year**; enterprise **Falcon Complete MDR requires custom tier scoping** | **15-Day Free Trial** (Includes Falcon Prevent NGAV, Device Control, and Express Support; no credit card required) | Agentic MDR with deterministic automation, AI agents, and 24/7 human oversight delivering median **1-minute time to containment (MTTC)**. |
+| **SentinelOne Vigilance Respond** | **~$8.0B Market Cap** (~$1.10B TTM Revenue) | Core Singularity platform begins at **~$30 – $40/endpoint/year** (Standard Core/Control list baseline for small fleets); **Vigilance MDR service add-on starts at custom tiered minimums** | **30-Day Free Trial** (Full evaluation of core Singularity endpoint protection platform via partner/sales portal) | Layered Singularity EDR/XDR defense; Respond Pro adds digital forensic reporting, malware reverse engineering, and dedicated prepaid incident response retainer. |
+| **Arctic Wolf Aurora MDR** | **~$4.3B Valuation** (~$430M+ ARR) | AWS Marketplace public listing starts at **$44,000/year base tier** (Covers up to 100 users/endpoints on a 12-month contract; ~$36/user/month) | **No Free Trial** (0 days; requires scheduled Concierge Security posture review and interactive live SOC architecture demonstration) | Concierge Security Team model with proprietary Aurora Agentic SOC and 200+ telemetry integrations reducing attack frequency by up to 90%. |
+| **ReliaQuest GreyMatter** | **~$3.4B Valuation** (~$300M – $400M ARR) | Enterprise multi-telemetry agreements starting at **enterprise commitments typically exceeding $80,000 – $100,000+/year** based on data pipeline throughput | **No Free Trial** (0 days; custom Proof of Value / interactive production architecture evaluation) | Open XDR SecOps platform with six autonomous AI teammate personas handling 100% of alert investigations with average 4.48-minute containment. |
+| **Druva Managed Data Detection and Response** | **~$2.0B Valuation** (~$200M+ ARR) | Platform consumption tier begins at **~$2.50 – $3.00/user/month** for endpoints or **$6.00 – $8.00/TB/month deduplicated backup data** (MDDR is included at $0 extra charge for core enterprise cloud platform customers) | **30-Day Free Trial** (Includes up to 1 TB of cloud backup data, automated ransomware anomaly detection, and full cloud management console access) | Tailored backup data threat monitoring, catching snapshot sabotage, mass deletion, and suspicious Microsoft 365/Google Workspace/AWS activity with guided recovery. |
+| **Expel MDR** | **~$1.0B Valuation** (~$120M – $145M ARR) | Entry-level **Starter tier** begins through select partner channels; median enterprise spend ranges from **~$150,000/year** across multi-workload deployments | **No Free Trial** (0 days; bespoke multi-day Proof of Value connecting directly to production cloud/SIEM infrastructure) | Vendor-agnostic, transparent BYO-tech MDR powered by the Ruxie AI engine with median 14-minute MTTR and live analyst workbench visibility. |
+| **Rapid7 Managed Threat Complete** | **~$980M Market Cap** (~$800M TTM Revenue) | Public marketplace tier starts at **$73,000/year** (Covering an initial deployment tier of ~300 enterprise assets, including servers and endpoints) | **14-Day Free Trial** (Full access to underlying InsightIDR cloud SIEM, automated log search, and behavioral vulnerability analytics) | MXDR bundled with unlimited vulnerability risk management and embedded digital forensics / incident response retainers without third-party handoffs. |
 
 ---
 
-⭐ **If this list helped you discover a useful tool, please star the repo!** ⭐
+## 💻 Open-Source Software & Toolkits 🛠️
+
+While turnkey 24/7 human analyst operations require organizational personnel or MSP partnerships, these battle-tested open-source projects provide the essential technical telemetry pipelines, SIEM correlation engines, threat intelligence sharing, and incident response frameworks for building modern detection and response capabilities.
+
+Sorted in descending order by GitHub stargazers:
+
+### 1. [Wazuh](https://github.com/wazuh/wazuh) [![GitHub stars](https://img.shields.io/github/stars/wazuh/wazuh?style=social&color=white)](https://github.com/wazuh/wazuh/stargazers)
+* **Stack:** C / C++ / Python / OpenSearch | **License:** GPL-2.0 📜
+* **Repository:** [wazuh/wazuh](https://github.com/wazuh/wazuh) 🔗
+* **Description:** Unified open-source XDR and SIEM platform providing endpoint security agents, File Integrity Monitoring (FIM), CVE vulnerability auditing, active remediation, and MITRE ATT&CK telemetry mapping.
+* **Role in MDDR:** Serves as the primary host-level sensor and telemetry aggregator for detection across physical endpoints, virtual instances, and containerized clusters.
+
+### 2. [Sigma](https://github.com/SigmaHQ/sigma) [![GitHub stars](https://img.shields.io/github/stars/SigmaHQ/sigma?style=social&color=white)](https://github.com/SigmaHQ/sigma/stargazers)
+* **Stack:** Python / YAML | **License:** Detection Rules (DRL 1.1) / Tools (LGPL-2.1) 📜
+* **Repository:** [SigmaHQ/sigma](https://github.com/SigmaHQ/sigma) 🔗
+* **Description:** Generic and open signature format for SIEM systems, allowing security analysts to write vendor-agnostic detection rules and convert them dynamically into queries for Wazuh, Splunk, Elastic, and Sentinel.
+* **Role in MDDR:** Powers standardized threat detection logic across multi-vendor log sources without vendor lock-in.
+
+### 3. [OpenCTI](https://github.com/OpenCTI-Platform/opencti) [![GitHub stars](https://img.shields.io/github/stars/OpenCTI-Platform/opencti?style=social&color=white)](https://github.com/OpenCTI-Platform/opencti/stargazers)
+* **Stack:** TypeScript / GraphQL / Python / Docker | **License:** Apache-2.0 📜
+* **Repository:** [OpenCTI-Platform/opencti](https://github.com/OpenCTI-Platform/opencti) 🔗
+* **Description:** Unified Cyber Threat Intelligence (CTI) platform engineered to structure, store, organize, and visualize tactical and strategic threat intelligence observables, TTPs, and threat actor campaigns.
+* **Role in MDDR:** Enriches raw security alerts with global threat intelligence feeds to prioritize high-confidence intrusions.
+
+### 4. [Zeek](https://github.com/zeek/zeek) [![GitHub stars](https://img.shields.io/github/stars/zeek/zeek?style=social&color=white)](https://github.com/zeek/zeek/stargazers)
+* **Stack:** C++ / Python / Zeek Script | **License:** BSD-3-Clause 📜
+* **Repository:** [zeek/zeek](https://github.com/zeek/zeek) 🔗
+* **Description:** Powerful network security monitoring and traffic analysis framework that inspects protocols at depth, transforms raw packets into structured event logs, and uncovers command-and-control communication channels.
+* **Role in MDDR:** Delivers critical network-layer visibility and behavioral telemetry to identify data exfiltration attempts.
+
+### 5. [MISP (Malware Information Sharing Platform)](https://github.com/MISP/MISP) [![GitHub stars](https://img.shields.io/github/stars/MISP/MISP?style=social&color=white)](https://github.com/MISP/MISP/stargazers)
+* **Stack:** PHP / Python / MySQL | **License:** GPL-3.0 📜
+* **Repository:** [MISP/MISP](https://github.com/MISP/MISP) 🔗
+* **Description:** Open-source software solution for collecting, storing, distributing, and sharing cyber security indicators of compromise (IOCs) and threat intelligence between CSIRTs and financial circles.
+* **Role in MDDR:** Facilitates automated IOC sharing and matching against inbound organizational telemetry streams.
+
+### 6. [OSSEC HIDS](https://github.com/ossec/ossec-hids) [![GitHub stars](https://img.shields.io/github/stars/ossec/ossec-hids?style=social&color=white)](https://github.com/ossec/ossec-hids/stargazers)
+* **Stack:** C / Shell | **License:** GPL-2.0 📜
+* **Repository:** [ossec/ossec-hids](https://github.com/ossec/ossec-hids) 🔗
+* **Description:** Lightweight host-based intrusion detection system offering comprehensive log analysis, file integrity verification, rootkit detection, and real-time active response alerts.
+* **Role in MDDR:** Provides reliable host audit tracking and tampering detection for mission-critical bare-metal servers.
+
+### 7. [Security Onion](https://github.com/Security-Onion-Solutions/securityonion) [![GitHub stars](https://img.shields.io/github/stars/Security-Onion-Solutions/securityonion?style=social&color=white)](https://github.com/Security-Onion-Solutions/securityonion/stargazers)
+* **Stack:** Linux / Python / Bash / Docker | **License:** AGPL-3.0 / Elastic License 📜
+* **Repository:** [Security-Onion-Solutions/securityonion](https://github.com/Security-Onion-Solutions/securityonion) 🔗
+* **Description:** Turnkey Linux distribution designed for threat hunting, enterprise security monitoring, and log management, bundling Zeek, Suricata, Wazuh, and the Elastic stack.
+* **Role in MDDR:** Acts as an all-in-one standalone open-source SOC sensor array for distributed network and host monitoring.
+
+### 8. [Velociraptor](https://github.com/velocidex/velociraptor) [![GitHub stars](https://img.shields.io/github/stars/velocidex/velociraptor?style=social&color=white)](https://github.com/velocidex/velociraptor/stargazers)
+* **Stack:** Go / VQL (Velociraptor Query Language) | **License:** AGPL-3.0 📜
+* **Repository:** [velocidex/velociraptor](https://github.com/velocidex/velociraptor) 🔗
+* **Description:** Advanced endpoint visibility, digital forensics, and incident response (DFIR) platform allowing security teams to query thousands of remote systems within seconds using VQL queries.
+* **Role in MDDR:** Powers deep live forensic triage, memory dump retrieval, and rapid artifact collection during an ongoing breach.
+
+### 9. [TheHive](https://github.com/TheHive-Project/TheHive) [![GitHub stars](https://img.shields.io/github/stars/TheHive-Project/TheHive?style=social&color=white)](https://github.com/TheHive-Project/TheHive/stargazers)
+* **Stack:** Scala / Angular / Elasticsearch | **License:** AGPL-3.0 📜
+* **Repository:** [TheHive-Project/TheHive](https://github.com/TheHive-Project/TheHive) 🔗
+* **Description:** Scalable, open-source Security Incident Response Platform designed to streamline case management, evidence collaboration, task assignment, and timeline tracking for SOC and CSIRT analysts.
+* **Role in MDDR:** Acts as the central case ticketing and incident investigation cockpit for analysts handling triage.
+
+### 10. [Shuffle](https://github.com/shuffle/shuffle) [![GitHub stars](https://img.shields.io/github/stars/shuffle/shuffle?style=social&color=white)](https://github.com/shuffle/shuffle/stargazers)
+* **Stack:** Go / Python / JavaScript | **License:** AGPL-3.0 📜
+* **Repository:** [shuffle/shuffle](https://github.com/shuffle/shuffle) 🔗
+* **Description:** Open-source Security Orchestration, Automation, and Response (SOAR) platform featuring an intuitive visual workflow builder, API connectors, and automated playbook triggers.
+* **Role in MDDR:** Automates containment workflows, such as isolating compromised machines, revoking OAuth tokens, or blocking attacker IPs.
+
+### 11. [Cortex](https://github.com/TheHive-Project/Cortex) [![GitHub stars](https://img.shields.io/github/stars/TheHive-Project/Cortex?style=social&color=white)](https://github.com/TheHive-Project/Cortex/stargazers)
+* **Stack:** Python / Play Framework | **License:** AGPL-3.0 📜
+* **Repository:** [TheHive-Project/Cortex](https://github.com/TheHive-Project/Cortex) 🔗
+* **Description:** Observable analysis and active response engine complementing TheHive by running automated analyzers (VirusTotal, Shodan, AbuseIPDB, URLScan) and active responders.
+* **Role in MDDR:** Instantly extracts and enriches IOCs submitted by SIEM alerts without manual analyst intervention.
+
+---
+
+## 📊 Feature & Response Comparison 🔍
+
+| Platform / Tool | Delivery Model | Primary Telemetry Focus | MTTC / Containment Speed | Retainer / Dedicated IR | Self-Hosted Option | Best Target Use Case |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **CrowdStrike Falcon Complete** | Managed SaaS | Full Enterprise Endpoint, Identity & Cloud | **~1 minute MTTC** | ✅ Included remediation | ❌ | High-velocity AI containment + governance |
+| **SentinelOne Vigilance** | Managed SaaS | Autonomous EDR / XDR Workloads | 1 – 4 hours | ✅ Respond Pro Retainer | ❌ | Deep digital forensic inspection & reverse engineering |
+| **Arctic Wolf Aurora** | Managed SaaS | Network, Host, Cloud & Identity | Minutes (Guided Concierge) | ✅ Concierge Security | ❌ | Turnkey risk posture reduction & compliance |
+| **ReliaQuest GreyMatter** | Managed SaaS / Platform | Universal Open XDR (300+ integrations) | **4.48 minutes MTTC** | ✅ AI Analyst Teammates | ❌ | Large enterprise multi-SIEM orchestration |
+| **Druva MDDR** | Managed SaaS | Backup Sets, Snapshots & Cloud Stores | Rapid playbook triage | ✅ Included with Druva | ❌ | Immutable backup defense & ransomware data recovery |
+| **Expel MDR** | Managed SaaS | Multi-Cloud, BYO-EDR & SaaS | **14 minutes MTTR** | ✅ Analyst-executed | ❌ | 100% transparent SOC workbench with existing tools |
+| **Rapid7 Managed Threat** | Managed SaaS | Asset Telemetry & Vulnerability Scanning | Minutes (Embedded DFIR) | ✅ Unlimited IR Retainer | ❌ | Integrated vulnerability management + MDR |
+| **Wazuh** | Open Source | Host FIM, System Calls & Logs | Automated Active Response | ❌ (Internal SOC / MSP) | ✅ | Comprehensive on-premise & cloud SIEM foundation |
+| **Velociraptor** | Open Source | Live Memory, Filesystem & VQL Artifacts | Seconds (Query runtime) | ❌ (Internal DFIR) | ✅ | Fleet-wide digital forensics & threat hunting |
+| **TheHive & Cortex** | Open Source | Security Cases & Threat Observables | Configurable Playbooks | ❌ (Internal SOC / MSP) | ✅ | Scalable incident case management & enrichment |
+| **Shuffle** | Open Source | Multi-Tool Webhooks & API Workflows | Sub-second Execution | ❌ (Internal Automation) | ✅ | Open-source SOAR automation & automated playbooks |
+
+---
+
+## 🤝 Contributing Guidelines 💡
+
+Contributions are warmly welcomed! If you wish to suggest an open-source detection framework, a cutting-edge autonomous SecOps engine, or updates to commercial platform capabilities:
+
+1. 🍴 Fork the repository.
+2. 🌿 Create your feature branch (`git checkout -b feature/new-mddr-tool`).
+3. 📝 Follow the existing table and format conventions. Provide verified starting tier pricing, explicit trial limits, and exact GitHub repository links.
+4. 💾 Commit your changes (`git commit -m 'feat: add new detection platform'`).
+5. 🚀 Push to the branch (`git push origin feature/new-mddr-tool`).
+6. 📬 Submit a Pull Request.
+
+Please verify that all submitted open-source repositories are actively maintained and licensed under recognized OSI-compliant licenses.
+
+---
+
+## 💖 Support & Sponsorship ☕
+
+If you found this curated list helpful for evaluating detection and response platforms, building your SOC strategy, or benchmarking enterprise security tools, consider supporting the continuous maintenance and curation of open cybersecurity resources:
+
+<div align="center">
+
+[![Sponsor ishandutta2007](https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?style=for-the-badge&logo=github-sponsors)](https://github.com/sponsors/ishandutta2007)
+
+**🙏 Thank you for your support! Every star, fork, and share helps empower the open security community!**
+
+⭐ **Star the repo** &nbsp;•&nbsp; 🍴 **Fork the project** &nbsp;•&nbsp; 📢 **Share with your SecOps team** &nbsp;•&nbsp; ☕ **[Buy a coffee via GitHub Sponsors](https://github.com/sponsors/ishandutta2007)**
+
+</div>
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Managed-Data-Detection-Response-MDDR&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Managed-Data-Detection-Response-MDDR&type=date&legend=top-left)
+
+---
+
+## 📄 License ⚖️
+
+This curated compilation is released under the creative commons [CC0 1.0 Universal (Public Domain Dedication)](https://creativecommons.org/publicdomain/zero/1.0/). Referenced commercial brands, trademarks, and open-source projects remain property of their respective owners and copyright holders.
+
+---
+
+<div align="center">
+  <b>Built with ❤️ for the global cybersecurity and threat hunting community.</b>
+</div>
