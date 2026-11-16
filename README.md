@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Managed-Data-Detection-Response-MDDR/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Managed-Data-Detection-Response-MDDR?style=flat-square&color=gold" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Managed-Data-Detection-Response-MDDR/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Managed-Data-Detection-Response-MDDR?style=flat-square&color=gold" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Managed-Data-Detection-Response-MDDR/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Managed-Data-Detection-Response-MDDR?style=flat-square&color=blue" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Managed-Data-Detection-Response-MDDR/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Managed-Data-Detection-Response-MDDR?style=flat-square&color=red" alt="GitHub Issues" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Managed-Data-Detection-Response-MDDR/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg?style=flat-square" alt="License: CC0-1.0" /></a>
@@ -66,67 +66,67 @@ While turnkey 24/7 human analyst operations require organizational personnel or 
 
 Sorted in descending order by GitHub stargazers:
 
-### 1. [Wazuh](https://github.com/wazuh/wazuh) [![GitHub stars](https://img.shields.io/github/stars/wazuh/wazuh?style=social&color=white)](https://github.com/wazuh/wazuh/stargazers)
+### 1. [Wazuh](https://github.com/wazuh/wazuh) [![GitHub_Stars](https://img.shields.io/github/stars/wazuh/wazuh?style=social&color=white)](https://github.com/wazuh/wazuh/stargazers)
 * **Stack:** C / C++ / Python / OpenSearch | **License:** GPL-2.0 📜
 * **Repository:** [wazuh/wazuh](https://github.com/wazuh/wazuh) 🔗
 * **Description:** Unified open-source XDR and SIEM platform providing endpoint security agents, File Integrity Monitoring (FIM), CVE vulnerability auditing, active remediation, and MITRE ATT&CK telemetry mapping.
 * **Role in MDDR:** Serves as the primary host-level sensor and telemetry aggregator for detection across physical endpoints, virtual instances, and containerized clusters.
 
-### 2. [Sigma](https://github.com/SigmaHQ/sigma) [![GitHub stars](https://img.shields.io/github/stars/SigmaHQ/sigma?style=social&color=white)](https://github.com/SigmaHQ/sigma/stargazers)
+### 2. [Sigma](https://github.com/SigmaHQ/sigma) [![GitHub_Stars](https://img.shields.io/github/stars/SigmaHQ/sigma?style=social&color=white)](https://github.com/SigmaHQ/sigma/stargazers)
 * **Stack:** Python / YAML | **License:** Detection Rules (DRL 1.1) / Tools (LGPL-2.1) 📜
 * **Repository:** [SigmaHQ/sigma](https://github.com/SigmaHQ/sigma) 🔗
 * **Description:** Generic and open signature format for SIEM systems, allowing security analysts to write vendor-agnostic detection rules and convert them dynamically into queries for Wazuh, Splunk, Elastic, and Sentinel.
 * **Role in MDDR:** Powers standardized threat detection logic across multi-vendor log sources without vendor lock-in.
 
-### 3. [OpenCTI](https://github.com/OpenCTI-Platform/opencti) [![GitHub stars](https://img.shields.io/github/stars/OpenCTI-Platform/opencti?style=social&color=white)](https://github.com/OpenCTI-Platform/opencti/stargazers)
+### 3. [OpenCTI](https://github.com/OpenCTI-Platform/opencti) [![GitHub_Stars](https://img.shields.io/github/stars/OpenCTI-Platform/opencti?style=social&color=white)](https://github.com/OpenCTI-Platform/opencti/stargazers)
 * **Stack:** TypeScript / GraphQL / Python / Docker | **License:** Apache-2.0 📜
 * **Repository:** [OpenCTI-Platform/opencti](https://github.com/OpenCTI-Platform/opencti) 🔗
 * **Description:** Unified Cyber Threat Intelligence (CTI) platform engineered to structure, store, organize, and visualize tactical and strategic threat intelligence observables, TTPs, and threat actor campaigns.
 * **Role in MDDR:** Enriches raw security alerts with global threat intelligence feeds to prioritize high-confidence intrusions.
 
-### 4. [Zeek](https://github.com/zeek/zeek) [![GitHub stars](https://img.shields.io/github/stars/zeek/zeek?style=social&color=white)](https://github.com/zeek/zeek/stargazers)
+### 4. [Zeek](https://github.com/zeek/zeek) [![GitHub_Stars](https://img.shields.io/github/stars/zeek/zeek?style=social&color=white)](https://github.com/zeek/zeek/stargazers)
 * **Stack:** C++ / Python / Zeek Script | **License:** BSD-3-Clause 📜
 * **Repository:** [zeek/zeek](https://github.com/zeek/zeek) 🔗
 * **Description:** Powerful network security monitoring and traffic analysis framework that inspects protocols at depth, transforms raw packets into structured event logs, and uncovers command-and-control communication channels.
 * **Role in MDDR:** Delivers critical network-layer visibility and behavioral telemetry to identify data exfiltration attempts.
 
-### 5. [MISP (Malware Information Sharing Platform)](https://github.com/MISP/MISP) [![GitHub stars](https://img.shields.io/github/stars/MISP/MISP?style=social&color=white)](https://github.com/MISP/MISP/stargazers)
+### 5. [MISP (Malware Information Sharing Platform)](https://github.com/MISP/MISP) [![GitHub_Stars](https://img.shields.io/github/stars/MISP/MISP?style=social&color=white)](https://github.com/MISP/MISP/stargazers)
 * **Stack:** PHP / Python / MySQL | **License:** GPL-3.0 📜
 * **Repository:** [MISP/MISP](https://github.com/MISP/MISP) 🔗
 * **Description:** Open-source software solution for collecting, storing, distributing, and sharing cyber security indicators of compromise (IOCs) and threat intelligence between CSIRTs and financial circles.
 * **Role in MDDR:** Facilitates automated IOC sharing and matching against inbound organizational telemetry streams.
 
-### 6. [OSSEC HIDS](https://github.com/ossec/ossec-hids) [![GitHub stars](https://img.shields.io/github/stars/ossec/ossec-hids?style=social&color=white)](https://github.com/ossec/ossec-hids/stargazers)
+### 6. [OSSEC HIDS](https://github.com/ossec/ossec-hids) [![GitHub_Stars](https://img.shields.io/github/stars/ossec/ossec-hids?style=social&color=white)](https://github.com/ossec/ossec-hids/stargazers)
 * **Stack:** C / Shell | **License:** GPL-2.0 📜
 * **Repository:** [ossec/ossec-hids](https://github.com/ossec/ossec-hids) 🔗
 * **Description:** Lightweight host-based intrusion detection system offering comprehensive log analysis, file integrity verification, rootkit detection, and real-time active response alerts.
 * **Role in MDDR:** Provides reliable host audit tracking and tampering detection for mission-critical bare-metal servers.
 
-### 7. [Security Onion](https://github.com/Security-Onion-Solutions/securityonion) [![GitHub stars](https://img.shields.io/github/stars/Security-Onion-Solutions/securityonion?style=social&color=white)](https://github.com/Security-Onion-Solutions/securityonion/stargazers)
+### 7. [Security Onion](https://github.com/Security-Onion-Solutions/securityonion) [![GitHub_Stars](https://img.shields.io/github/stars/Security-Onion-Solutions/securityonion?style=social&color=white)](https://github.com/Security-Onion-Solutions/securityonion/stargazers)
 * **Stack:** Linux / Python / Bash / Docker | **License:** AGPL-3.0 / Elastic License 📜
 * **Repository:** [Security-Onion-Solutions/securityonion](https://github.com/Security-Onion-Solutions/securityonion) 🔗
 * **Description:** Turnkey Linux distribution designed for threat hunting, enterprise security monitoring, and log management, bundling Zeek, Suricata, Wazuh, and the Elastic stack.
 * **Role in MDDR:** Acts as an all-in-one standalone open-source SOC sensor array for distributed network and host monitoring.
 
-### 8. [Velociraptor](https://github.com/velocidex/velociraptor) [![GitHub stars](https://img.shields.io/github/stars/velocidex/velociraptor?style=social&color=white)](https://github.com/velocidex/velociraptor/stargazers)
+### 8. [Velociraptor](https://github.com/velocidex/velociraptor) [![GitHub_Stars](https://img.shields.io/github/stars/velocidex/velociraptor?style=social&color=white)](https://github.com/velocidex/velociraptor/stargazers)
 * **Stack:** Go / VQL (Velociraptor Query Language) | **License:** AGPL-3.0 📜
 * **Repository:** [velocidex/velociraptor](https://github.com/velocidex/velociraptor) 🔗
 * **Description:** Advanced endpoint visibility, digital forensics, and incident response (DFIR) platform allowing security teams to query thousands of remote systems within seconds using VQL queries.
 * **Role in MDDR:** Powers deep live forensic triage, memory dump retrieval, and rapid artifact collection during an ongoing breach.
 
-### 9. [TheHive](https://github.com/TheHive-Project/TheHive) [![GitHub stars](https://img.shields.io/github/stars/TheHive-Project/TheHive?style=social&color=white)](https://github.com/TheHive-Project/TheHive/stargazers)
+### 9. [TheHive](https://github.com/TheHive-Project/TheHive) [![GitHub_Stars](https://img.shields.io/github/stars/TheHive-Project/TheHive?style=social&color=white)](https://github.com/TheHive-Project/TheHive/stargazers)
 * **Stack:** Scala / Angular / Elasticsearch | **License:** AGPL-3.0 📜
 * **Repository:** [TheHive-Project/TheHive](https://github.com/TheHive-Project/TheHive) 🔗
 * **Description:** Scalable, open-source Security Incident Response Platform designed to streamline case management, evidence collaboration, task assignment, and timeline tracking for SOC and CSIRT analysts.
 * **Role in MDDR:** Acts as the central case ticketing and incident investigation cockpit for analysts handling triage.
 
-### 10. [Shuffle](https://github.com/shuffle/shuffle) [![GitHub stars](https://img.shields.io/github/stars/shuffle/shuffle?style=social&color=white)](https://github.com/shuffle/shuffle/stargazers)
+### 10. [Shuffle](https://github.com/shuffle/shuffle) [![GitHub_Stars](https://img.shields.io/github/stars/shuffle/shuffle?style=social&color=white)](https://github.com/shuffle/shuffle/stargazers)
 * **Stack:** Go / Python / JavaScript | **License:** AGPL-3.0 📜
 * **Repository:** [shuffle/shuffle](https://github.com/shuffle/shuffle) 🔗
 * **Description:** Open-source Security Orchestration, Automation, and Response (SOAR) platform featuring an intuitive visual workflow builder, API connectors, and automated playbook triggers.
 * **Role in MDDR:** Automates containment workflows, such as isolating compromised machines, revoking OAuth tokens, or blocking attacker IPs.
 
-### 11. [Cortex](https://github.com/TheHive-Project/Cortex) [![GitHub stars](https://img.shields.io/github/stars/TheHive-Project/Cortex?style=social&color=white)](https://github.com/TheHive-Project/Cortex/stargazers)
+### 11. [Cortex](https://github.com/TheHive-Project/Cortex) [![GitHub_Stars](https://img.shields.io/github/stars/TheHive-Project/Cortex?style=social&color=white)](https://github.com/TheHive-Project/Cortex/stargazers)
 * **Stack:** Python / Play Framework | **License:** AGPL-3.0 📜
 * **Repository:** [TheHive-Project/Cortex](https://github.com/TheHive-Project/Cortex) 🔗
 * **Description:** Observable analysis and active response engine complementing TheHive by running automated analyzers (VirusTotal, Shodan, AbuseIPDB, URLScan) and active responders.
